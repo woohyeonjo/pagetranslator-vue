@@ -1,6 +1,7 @@
 {
   "name": "@nnm/page-translator",
-  "version": "1.0.0",
+  "version": "1.0.2",
+  "description": "Page translator using Google Cloud Translation API for Vue.js",
   "private": false,
   "main": "dist/page-translator.common.js",
   "scripts": {
@@ -8,6 +9,24 @@
     "build": "vue-cli-service build --target lib --name page-translator src/plugin.js",
     "lint": "vue-cli-service lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woohyeonjo/page-translator.git"
+  },
+  "keywords": [
+    "translator",
+    "translate",
+    "translation",
+    "google translation",
+    "googlecloudtranslation",
+    "Vue.js"
+  ],
+  "author": "Woohyeon Jo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/woohyeonjo/page-translator/issues"
+  },
+  "homepage": "https://github.com/woohyeonjo/page-translator",
   "dependencies": {
     "axios": "^0.19.0",
     "core-js": "^2.6.5",

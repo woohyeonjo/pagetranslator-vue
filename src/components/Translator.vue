@@ -28,6 +28,7 @@ export default {
 	},
 	data() {
 		return {
+			isReady: true,
 			isActive: false,
 			originText: [],
 		};
@@ -43,9 +44,16 @@ export default {
 	},
 	methods: {
 		translate() {
+			if(!this.isReady) return;
+			this.isReady = false;
+
 			if (!this.isActive) this.recursiveSearch(document.body);
 			else this.reset(document.body);
-			this.isActive = !this.isActive;
+
+			setTimeout(() => {
+				this.isReady = true;
+				this.isActive = !this.isActive;
+			}, 2 * 1000);
 		},
 		reset(currentNode) {
 			currentNode.childNodes.forEach(async child => {

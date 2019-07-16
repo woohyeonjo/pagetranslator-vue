@@ -74,7 +74,7 @@ This component uses the `Google Cloud Translation API` and requires your  `API K
 
 ## License
 
-This is released under the MIT license. See [LICENSE](./license) for details.
+This is released under the MIT license. See [LICENSE](LICENSE) for details.
 
 
 

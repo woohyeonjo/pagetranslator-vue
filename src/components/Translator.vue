@@ -54,6 +54,8 @@ export default {
 				this.isReady = true;
 				this.isActive = !this.isActive;
 			}, 2 * 1000);
+
+			// TODO: Add Button Spinner
 		},
 		reset(currentNode) {
 			currentNode.childNodes.forEach(async child => {

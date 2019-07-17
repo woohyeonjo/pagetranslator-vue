@@ -45,6 +45,7 @@ export default {
 	methods: {
 		translate() {
 			if(!this.isReady) return;
+			this.loading();
 			this.isReady = false;
 
 			if (!this.isActive) this.recursiveSearch(document.body);
@@ -52,10 +53,15 @@ export default {
 
 			setTimeout(() => {
 				this.isReady = true;
+				this.loading();
 				this.isActive = !this.isActive;
 			}, 2 * 1000);
+		},
+		loading() {
+			const btn = document.getElementsByClassName('translator')[0].classList;
 
-			// TODO: Add Button Spinner
+			if(btn.contains('rotating')) btn.remove('rotating');
+			else btn.add('rotating');
 		},
 		reset(currentNode) {
 			currentNode.childNodes.forEach(async child => {
@@ -113,5 +119,40 @@ export default {
 }
 .disabled {
 	filter: grayscale(100%);
+}
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+	from {
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotating {
+	from {
+		-ms-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to {
+		-ms-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+.rotating {
+	-webkit-animation: rotating 2s linear infinite;
+	-moz-animation: rotating 2s linear infinite;
+	-ms-animation: rotating 2s linear infinite;
+	-o-animation: rotating 2s linear infinite;
+	animation: rotating 2s linear infinite;
 }
 </style>

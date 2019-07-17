@@ -47,6 +47,15 @@ This component uses the `Google Cloud Translation API` and requires your  `API K
 
 <br>
 
+
+
+
+- Translator OFF
+
+  <img src="images/use.gif" alt="usage gif">
+
+
+
 - Translator OFF
 
   <img src="images/translator_disable.png" alt="usage image disable">
@@ -67,9 +76,9 @@ This component uses the `Google Cloud Translation API` and requires your  `API K
 
 ## Bug
 
-- The function does not work if you press the button several times quickly.
-  - I think it's a function synchronization problem or DOM tree's rendering problem. I would appreciate it if you gave me a hint.
-
+- ~~The function does not work if you press the button several times quickly.~~
+  - ~~I think it's a function synchronization problem or DOM tree's rendering problem. I would appreciate it if you gave me a hint.~~
+  - This problem was solved by adding a spinner to setTimeout.
 <br>
 
 ## License

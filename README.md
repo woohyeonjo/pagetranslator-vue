@@ -52,7 +52,7 @@ This component uses the `Google Cloud Translation API` and requires your  `API K
 
 - Translator gif
 
-  <center><img src="images/use.gif" alt="usage gif"></center>
+  <img src="images/use.gif" alt="usage gif" style="float: right">
 
 
 

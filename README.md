@@ -50,9 +50,9 @@ This component uses the `Google Cloud Translation API` and requires your  `API K
 
 
 
-- Translator OFF
+- Translator gif
 
-  <img src="images/use.gif" alt="usage gif">
+  <img src="images/use.gif" alt="usage gif" style="display: block; margin: auto;">
 
 
 

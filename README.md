@@ -29,7 +29,7 @@ This component uses the `Google Cloud Translation API` and requires your  `API K
 
 - ```js
   import 'page-translator' from '@nnm/page-translator'
-  import '@nnm/page-translator/dist/page-translator.css
+  import '@nnm/page-translator/dist/page-translator.css'
   ```
 
 - ```js

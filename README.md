@@ -28,20 +28,20 @@ This component uses the `Google Cloud Translation API` and requires your  `API K
 > ### Use
 
 - ```js
-  import 'page-translator' from '@nnm/page-translator'
+  import pageTranslator from '@nnm/page-translator'
   import '@nnm/page-translator/dist/page-translator.css'
   ```
 
 - ```js
   ...
-  Vue.use(page-translator);
+  Vue.use(pageTranslator);
   ...
   ```
 
 - ```js
-  <page-translator target="laungage code ex) en, ko ..." 
-                   position="left or right"
-                   apikey="Input your API KEY"
+  <Translator target="laungage code ex) en, ko ..." 
+              position="left or right"
+              apikey="Input your API KEY"
   />
   ```
 
